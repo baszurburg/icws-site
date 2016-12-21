@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Mon, 03 Oct 2016 21:29:10 +0200</pubDate><title><![CDATA[Content page]]></title><url><![CDATA[content-page]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Content page]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[templateSidebar.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;From a web browser, navigate to the folder where you just uploaded GetSimple to. You will need to navigate to the admin subdirectory&amp;nbsp;/admin. This will redirect you to an install screen. (e.g&amp;nbsp;mydomain.tld/admin&amp;nbsp;or&amp;nbsp;mydomain.tld/path-to-get-simple/admin&amp;nbsp;)&amp;nbsp;&lt;br /&gt;
+	If you are using a custom gsadmin folder as setup in gsconfig, adjust this accordingly and remember to rename your admin folder for upgrades.&lt;/p&gt;
+
+&lt;p&gt;All fields are mandatory. Once complete, you will be asked to sign in with your newly generated random password. Additionally, your username and temporary password will be emailed to the email address you input on the installation screen.&lt;/p&gt;
+
+&lt;p&gt;After completion of the setup you should be automatically forwarded into the administration panel. If you are not, please direct your browser to&amp;nbsp;mydomain.tld/path-to-get-simple/admin&amp;nbsp;to sign in.&lt;/p&gt;
+
+&lt;p&gt;Once you sign into GetSimple for the first time, you will be prompted to change your password to something you might better remember.&lt;/p&gt;
+
+&lt;p&gt;IMPORTANT:&amp;nbsp;It is also imperative that you go to&amp;nbsp;Support → Health Check&amp;nbsp;to make sure that you&#039;ve uploaded all necessary&amp;nbsp;.htaccess&amp;nbsp;files. Some folders in your installation have sensitive data and should not be accessible to outside visitors.&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[bas]]></author></item>
