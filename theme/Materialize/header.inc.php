@@ -22,11 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 	<link href="<?php get_theme_url(); ?>/style-m.min.css?v=<?php echo get_site_version(); ?>" rel="stylesheet">
-
-  <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
 
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -38,8 +34,6 @@
   <![endif]-->
 
 	<?php get_header(); ?>
-
-    <link rel="import" href="/bower_components/paper-button/paper-button.html">
 
 </head>
 <body id="<?php get_page_slug(); ?>" >
