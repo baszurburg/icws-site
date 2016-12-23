@@ -39,64 +39,173 @@
 
 	<?php get_header(); ?>
 
-    <link rel="import" href="/bower_components/paper-button/paper-button.html">
+  <link rel="import" href="/bower_components/polymer/polymer.html">
+
+  <link rel="import" href="/bower_components/iron-iconset-svg/iron-iconset-svg.html">
+
+  <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
+  <link rel="import" href="/bower_components/paper-checkbox/paper-checkbox.html">
+
+  <link rel="import" href="/bower_components/app-layout/app-drawer-layout/app-drawer-layout.html">
+  <link rel="import" href="/bower_components/app-layout/app-drawer/app-drawer.html">
+  <link rel="import" href="/bower_components/app-layout/app-header-layout/app-header-layout.html">
+  <link rel="import" href="/bower_components/app-layout/app-header/app-header.html">
+  <link rel="import" href="/bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
+  <link rel="import" href="/bower_components/app-layout/app-toolbar/app-toolbar.html">
+  <link rel="import" href="/bower_components/paper-button/paper-button.html">
+
+    <style>
+    app-drawer section {
+      height: 100%;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    app-drawer h2 {
+      margin: 8px 0 0;
+      padding: 18px;
+      font-size: 18px;
+    }
+    app-drawer paper-checkbox {
+      display: block;
+      padding: 18px;
+    }
+    app-header {
+      color: #fff;
+      background-color: #C62828;
+      --app-header-background-front-layer: {
+        background-image: url(//app-layout-assets.appspot.com/assets/test-drive.jpg);
+        background-position: 50% 10%;
+      };
+    }
+    [main-title] {
+      font-size: 2em;
+    }
+    </style>
 
 </head>
 <body id="<?php get_page_slug(); ?>" >
 
-<header>
 
-  <nav>
-    <div class="nav-wrapper">
-      <div class="container">
-        <a href="#" class="brand-logo"><?php get_site_name(); ?></a>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <app-drawer-layout>
 
-        <ul class="right hide-on-med-and-down">
+      <app-drawer swipe-open>
+        <section>
+          <h2>app-header Properties</h2>
+          <paper-checkbox checked="{{condenses}}">
+            condenses
+          </paper-checkbox>
+          <paper-checkbox checked="{{fixed}}">
+            fixed
+          </paper-checkbox>
+          <paper-checkbox checked="{{reveals}}">
+            reveals
+          </paper-checkbox>
+          <paper-checkbox checked="{{shadow}}">
+            shadow
+          </paper-checkbox>
+
+          <h2>app-header Effects</h2>
+          <paper-checkbox checked="{{blendBackground}}">
+            blend-background
+          </paper-checkbox>
+          <paper-checkbox checked="{{fadeBackground}}">
+            fade-background
+          </paper-checkbox>
+          <paper-checkbox checked="{{parallaxBackground}}">
+            parallax-background
+          </paper-checkbox>
+          <paper-checkbox checked="{{resizeSnappedTitle}}">
+            resize-snapped-title
+          </paper-checkbox>
+          <paper-checkbox checked="{{resizeTitle}}">
+            resize-title
+          </paper-checkbox>
+          <paper-checkbox checked="{{waterfall}}">
+            waterfall
+          </paper-checkbox>
+        </section>
+      </app-drawer>
+
+      <app-header-layout>
+
+        <app-header
+            condenses="true"
+            fixed="true"
+            shadow="true"
+            effects="blend-background parallax-background resize-title">
+
+          <app-toolbar>
+            <paper-icon-button icon="app:menu" drawer-toggle></paper-icon-button>
+            <div condensed-title>Test Drive app-header</div>
+          </app-toolbar>
+
+          <app-toolbar></app-toolbar>
+
+          <app-toolbar>
+            <div main-title spacer>Test Drive</div>
+          </app-toolbar>
+
+        </app-header>
+
+        <div size="100">
+          My content
+
+        <ul class="">
           <?php get_navigation(get_page_slug(FALSE)); ?>
         </ul>
 
-      </div>
 
-      <ul id="slide-out" class="side-nav fixed">
+        <ul>
 
-        <li>
-            &nbsp;
-        </li>
+          <li>
+              &nbsp;
+          </li>
 
-        <li>
-            <img src="<?php get_theme_url(); ?>/images/icws-logo-300.png">
-        </li>
-        <li><div class="divider"></div></li>
+          <li>
+              <img src="<?php get_theme_url(); ?>/images/icws-logo-300.png">
+          </li>
+          <li><div class="divider"></div></li>
 
-        <?php get_navigation(get_page_slug(FALSE)); ?>
+          <?php get_navigation(get_page_slug(FALSE)); ?>
 
-        <li><div class="divider"></div></li>
-        <!-- include the sidebar template -->
+          <li><div class="divider"></div></li>
+          <!-- include the sidebar template -->
 
-        <!-- do somethings conditional in php -->
+          <!-- do somethings conditional in php -->
 
-<?php
-if (get_page_slug(false) == 'about') {
+          <?php
+          if (get_page_slug(false) == 'about') {
 
-?>
-	    <li>
-          <div class="userView">
-          <img class="background" src="<?php get_theme_url(); ?>/images/bas-bryce-300.jpg">
-          <!--
-            <a href="#!user"><img class="circle" src="<?php get_theme_url(); ?>/images/yuna.jpg"></a>
-          -->
-          <br />
-          <a href="#!name"><span class="white-text name">Bas Zurburg</span></a>
-          <a href="mailto:bas.zurburg@gmail.com"><span class="white-text email">bas.zurburg@gmail.com</span></a>
-          </div>
-		</li>
+          ?>
+                <li>
+                    <div class="userView">
+                    <img class="background" src="<?php get_theme_url(); ?>/images/bas-bryce-300.jpg">
+                    <!--
+                      <a href="#!user"><img class="circle" src="<?php get_theme_url(); ?>/images/yuna.jpg"></a>
+                    -->
+                    <br />
+                    <a href="#!name"><span class="white-text name">Bas Zurburg</span></a>
+                    <a href="mailto:bas.zurburg@gmail.com"><span class="white-text email">bas.zurburg@gmail.com</span></a>
+                    </div>
+              </li>
 
-<?php
-}
-?>
+          <?php
+          }
+          ?>
 
  	  </ul>
-    </div>
-  </nav>
+
+             <!-- title and content -->
+		  <h1 style="margin-top: 0;"><?php get_page_title(); ?></h1>
+        <?php get_page_content(); ?>
+
+
+        </div>
+
+      </app-header-layout>
+
+    </app-drawer-layout>
+
+
+<header>
 </header>
