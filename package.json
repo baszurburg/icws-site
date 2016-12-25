@@ -1,14 +1,13 @@
 {
-  "name": "materialize-css",
-  "description": "Builds Materialize distribution packages",
-  "author": "Alvin Wang, Alan Chang",
-  "url": "http://materializecss.com/",
-  "version": "0.97.7",
-  "main": "bin/materialize.js",
-  "license": "MIT",
+  "name": "icws-site",
+  "description": "ICWS Homepage",
+  "author": "Bas Zurburg",
+  "url": "http://icws.nl",
+  "version": "0.0.1",
+  "main": "index.php",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Dogfalo/materialize.git"
+    "url": "https://github.com/baszurburg/icws-site"
   },
   "dependencies": {
     "gulp": "^3.5.6",

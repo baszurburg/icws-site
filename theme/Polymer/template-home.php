@@ -13,33 +13,18 @@
 $innov_settings = Innovation_Settings();
 
 # Include the header template
-include('header.inc.php');
+include('templates/header.inc.php');
 ?>
 
-<main>
+<body unresolved id="<?php get_page_slug(); ?>" >
 
-    <article>
-      <section>
-
-        <!-- title and content -->
-
-        <?php get_page_content(); ?>
-
-
-
-        <!-- page footer -->
-        <div class="footer">
-          <p>Published on <time datetime="<?php get_page_date('Y-m-d'); ?>" pubdate><?php get_page_date('F jS, Y'); ?></time></p>
-        </div>
-      </section>
-
-    </article>
-
-</main>
-
-
+<?php include('templates/app-drawer-page.inc.php'); ?>
 
 <!-- include the footer template -->
-<?php include('footer.inc.php'); ?>
+<?php include('templates/footer.inc.php'); ?>
 
 <script src="<?php get_theme_url(); ?>/assets/js/site.js"></script>
+
+	 
+</body>
+</html>

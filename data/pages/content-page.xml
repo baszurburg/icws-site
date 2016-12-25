@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<item><pubDate>Mon, 03 Oct 2016 21:56:09 +0200</pubDate><title><![CDATA[Content page]]></title><url><![CDATA[content-page]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Content page]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[templateSidebar.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;From a web browser, navigate to the folder where you just uploaded GetSimple to. You will need to navigate to the admin subdirectory&amp;nbsp;/admin. This will redirect you to an install screen. (e.g&amp;nbsp;mydomain.tld/admin&amp;nbsp;or&amp;nbsp;mydomain.tld/path-to-get-simple/admin&amp;nbsp;)&amp;nbsp;&lt;br /&gt;
+<item><pubDate>Fri, 23 Dec 2016 21:25:56 +0100</pubDate><title><![CDATA[Content page]]></title><url><![CDATA[content-page]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Content page]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template-home.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;p&gt;From a web browser, navigate to the folder where you just uploaded GetSimple to. You will need to navigate to the admin subdirectory&amp;nbsp;/admin. This will redirect you to an install screen. (e.g&amp;nbsp;mydomain.tld/admin&amp;nbsp;or&amp;nbsp;mydomain.tld/path-to-get-simple/admin&amp;nbsp;)&amp;nbsp;&lt;br /&gt;
 	If you are using a custom gsadmin folder as setup in gsconfig, adjust this accordingly and remember to rename your admin folder for upgrades.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;http://icws.nl:8888/data/uploads/icws-logo-full.png&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;/data/uploads/icws-logo-full.png&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
