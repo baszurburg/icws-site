@@ -24,7 +24,7 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<link href="<?php get_theme_url(); ?>/style-m.css?v=<?php echo get_site_version(); ?>" rel="stylesheet">
+	<link href="<?php get_theme_url(); ?>/assets/css/style-m.css?v=<?php echo get_site_version(); ?>" rel="stylesheet">
 
   <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
 

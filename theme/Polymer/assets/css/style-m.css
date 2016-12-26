@@ -2039,11 +2039,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-header, main, footer {
-  padding-left: 300px; }
+
   @media (max-width: 992px) {
     header, main, footer {
-      padding-left: 0; } }
+      padding-left: 0; } 
+  }
 
 ul {
   padding: 0;
@@ -2105,7 +2105,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #00acc1; }
+  border-left: 5px solid #aa2828; }
 
 i {
   line-height: inherit; }
@@ -2145,7 +2145,7 @@ video.responsive-video {
   .pagination li.active a {
     color: #fff; }
   .pagination li.active {
-    background-color: #00acc1; }
+    background-color: #aa2828; }
   .pagination li.disabled a {
     cursor: default;
     color: #999; }
@@ -2281,13 +2281,13 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #00acc1; }
+  background-color: #bbb; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(51, 51, 51, 0.08); }
+    background-color: rgba(33, 33, 33, 0.08); }
 
 table, th, td {
   border: none; }
@@ -3033,7 +3033,7 @@ input[type=range] + .thumb {
 
 nav {
   color: #fff;
-  background-color: #00acc1;
+  background-color: #aa2828;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -3152,7 +3152,35 @@ nav {
   .navbar-fixed {
     height: 64px; } }
 
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Thin), url("../fonts/roboto/Roboto-Thin.eot");
+  src: url("../fonts/roboto/Roboto-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Thin.woff2") format("woff2"), url("../fonts/roboto/Roboto-Thin.woff") format("woff"), url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200; }
 
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Light), url("../fonts/roboto/Roboto-Light.eot");
+  src: url("../fonts/roboto/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Roboto";
+  src: local(Roboto Regular), url("../fonts/roboto/Roboto-Regular.eot");
+  src: url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Medium.eot");
+  src: url("../fonts/roboto/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/roboto/Roboto-Medium.woff") format("woff"), url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.eot");
+  src: url("../fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; }
 
 a {
   text-decoration: none; }
@@ -3492,7 +3520,7 @@ small {
     width: 15%;
     min-width: 80px; }
     .tabs .tab a {
-      color: #00acc1;
+      color: #aa2828;
       display: block;
       width: 100%;
       height: 100%;
@@ -3500,15 +3528,15 @@ small {
       overflow: hidden;
       transition: color .28s ease; }
       .tabs .tab a:hover {
-        color: #28e8ff; }
+        color: #d95f5f; }
     .tabs .tab.disabled a {
-      color: #28e8ff;
+      color: #d95f5f;
       cursor: default; }
   .tabs .indicator {
     position: absolute;
     bottom: 0;
     height: 2px;
-    background-color: #0fe5ff;
+    background-color: #d44a4a;
     will-change: left, right; }
 
 .material-tooltip {
@@ -5204,7 +5232,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .side-nav .collapsible-body li.active,
 .side-nav.fixed .collapsible-body li.active {
-  background-color: #00acc1; }
+  background-color: #aa2828; }
   .side-nav .collapsible-body li.active a,
   .side-nav.fixed .collapsible-body li.active a {
     color: #fff; }

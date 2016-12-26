@@ -20,20 +20,6 @@ include('templates/header.inc.php');
 
 <?php include('templates/app-drawer-page.inc.php'); ?>
 
-        <!-- page footer -->
-        <div class="footer">
-          <p>Published on <time datetime="<?php get_page_date('Y-m-d'); ?>" pubdate><?php get_page_date('F jS, Y'); ?></time></p>
-          <paper-button>link</paper-button>
-          <paper-button raised>raised</paper-button>
-          <paper-button toggles raised>toggles</paper-button>
-          <paper-button disabled>disabled</paper-button>
-        </div>
-      </section>
-
-
-<!-- include the footer template -->
-<?php include('templates/footer.inc.php'); ?>
-
 <script src="<?php get_theme_url(); ?>/assets/js/site.js"></script>
 
 </body>

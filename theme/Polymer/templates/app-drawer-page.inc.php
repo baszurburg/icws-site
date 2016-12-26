@@ -12,14 +12,14 @@
   <style is="custom-style">
 
       app-drawer {
-        box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.4);
+        box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.4);
       }
 
       app-drawer section {
         height: 100%;
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
-        background-image: linear-gradient(135deg, rgb(0, 0, 0) 0px, #ba1119)
+        background-image: linear-gradient(135deg, rgb(0, 0, 0) 0px, #aa2828)
       }
       app-drawer h2 {
         margin: 8px 0 0;
@@ -36,7 +36,7 @@
 
       app-header {
         color: #fff;
-        background-color: #C62828;
+        background-color: #aa2828;
         --app-header-background-front-layer: {
           background-image: url(/theme/Polymer/images/grand-canyon.jpg);
           background-position: 50% 10%;
@@ -45,7 +45,7 @@
 
 
       article.content {
-        padding: 0 16px;
+        padding: 0 16px 16px;
       }
 
       .breadcrumbs {
@@ -156,6 +156,9 @@
       </section>
 
     </article>
+
+    <!-- include the footer template -->
+    <?php include('footer.inc.php'); ?>
 
   </app-header-layout>
 
