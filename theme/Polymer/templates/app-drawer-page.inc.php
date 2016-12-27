@@ -33,14 +33,28 @@
         background-color: #fff;
       }
 
-
       app-header {
         color: #fff;
         background-color: #aa2828;
         --app-header-background-front-layer: {
           background-image: url(/theme/Polymer/images/grand-canyon.jpg);
-          background-position: 50% 10%;
+          background-position: 50% 5%;
         };
+      }
+
+      ul.sidenav {
+        margin-top: 2px;
+      }
+
+      ul.sidenav li {
+        border-bottom: 1px solid #666;
+      }
+
+      ul.sidenav li  a {
+        display: block;
+        color: #ccc;
+        padding: 0 12px;
+        line-height: 2.5em;
       }
 
 
@@ -64,21 +78,15 @@
 
   <app-drawer swipe-open>
     <section>
-      <ul class="logo">
-        <li>
-            <img src="<?php get_theme_url(); ?>/images/icws-logo-300.png">
-        </li>
+      <div class="logo">
+        <img src="<?php get_theme_url(); ?>/images/icws-logo-300.png">
+      </div>
 
-      </ul>
-
-
-      <ul>
+      <ul class="sidenav">
         <?php get_navigation(get_page_slug(FALSE)); ?>
       </ul>
 
       <ul>
-        <li><div class="divider"></div></li>
-
 
         <!-- do somethings conditional in php -->
 

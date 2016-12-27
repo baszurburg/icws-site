@@ -20,7 +20,7 @@ include('templates/header.inc.php');
 
 <?php include('templates/app-drawer-page.inc.php'); ?>
 
-<script src="<?php get_theme_url(); ?>/assets/js/site.js"></script>
+<?php include('templates/body-bottom.inc.php'); ?>
 
 </body>
 </html>
