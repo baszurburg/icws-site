@@ -96,31 +96,31 @@
         <?php get_navigation(get_page_slug(FALSE)); ?>
       </ul>
 
-      <ul>
-
         <!-- do somethings conditional in php -->
 
-        <?php
-        if (get_page_slug(false) == 'about') {
+      <?php
+      if (get_page_slug(false) == 'about') {
 
-        ?>
-              <li>
-                  <div class="userView">
-                  <img class="background" src="<?php get_theme_url(); ?>/images/bas-bryce-300.jpg">
-                  <!--
-                    <a href="#!user"><img class="circle" src="<?php get_theme_url(); ?>/images/yuna.jpg"></a>
-                  -->
-                  <br />
-                  <a href="#!name"><span class="white-text name">Bas Zurburg</span></a>
-                  <a href="mailto:bas.zurburg@gmail.com"><span class="white-text email">bas.zurburg@gmail.com</span></a>
-                  </div>
-            </li>
+      ?>
 
-        <?php
-        }
-        ?>
+        <style>
+          .userView {
+            margin: -8px 8px 8px;
+          }
+          .userView img {
+            border-radius: 2px;
+          }
 
-    </ul>
+        </style>
+
+        <div class="userView">
+          <img class="responsive-img" src="<?php get_theme_url(); ?>/images/bas-bryce-300.jpg">
+        </div>
+
+      <?php
+      }
+      ?>
+
 
     </section>
   </app-drawer>
