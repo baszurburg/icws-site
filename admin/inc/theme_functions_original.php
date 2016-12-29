@@ -583,7 +583,7 @@ function get_navigation($currentpage,$classPrefix = "") {
 				if ("$currentpage" == "$url_nav") $classes .= " current active";
 				if ($page['menu'] == '') { $page['menu'] = $page['title']; }
 				if ($page['title'] == '') { $page['title'] = $page['menu']; }
-				$menu .= '<li class="'. $classes .'"><a href="'. find_url($page['url'],$page['parent']) . '" class="waves-effect waves-teal"  title="'. encode_quotes(cl($page['title'])) .'">'.strip_decode($page['menu']).'</a></li>'."\n";
+				$menu .= '<li class="'. $classes .'"><a href="'. find_url($page['url'],$page['parent']) . '" title="'. encode_quotes(cl($page['title'])) .'">'.strip_decode($page['menu']).'</a></li>'."\n";
 			}
 		}
 

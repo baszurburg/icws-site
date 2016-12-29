@@ -50,13 +50,23 @@
         border-bottom: 1px solid #666;
       }
 
-      ul.sidenav li  a {
+      ul.sidenav li a {
         display: block;
         color: #ccc;
         padding: 0 12px;
         line-height: 2.5em;
       }
 
+      ul.sidenav li a:hover,
+      ul.sidenav li a:focus {
+        background-color: teal;
+      }
+
+      ul.sidenav li.active a {
+        background-color: teal;
+        font-weight: 400;
+        color: #fff;
+      }
 
       article.content {
         padding: 0 16px 16px;
