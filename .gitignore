@@ -5,6 +5,9 @@ logs
 # editors
 .idea
 
+# apple
+._.DS_Store
+
 # Runtime data
 pids
 *.pid
@@ -14,8 +17,8 @@ pids
 lib-cov
 
 # Data files
+backups
 data
-data/other
 
 # Coverage directory used by tools like istanbul
 coverage
