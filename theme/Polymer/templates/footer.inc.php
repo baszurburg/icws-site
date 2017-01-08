@@ -15,9 +15,10 @@
 <style>
   footer.fixed { position: fixed; bottom: 0; right: 0; left: 256px;}
   
-  @media only screen and (max-width: 640px)
-    footer.fixed {
-      left: 0;;
+  @media (max-width: 640px) {
+      footer.fixed {
+        left: 0;
+      }
     }
 </style>
 
