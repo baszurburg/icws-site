@@ -167,10 +167,9 @@
         <!-- content -->
         <?php get_page_content(); ?>
 
-        <!-- page footer -->
-        <div class="footer">
+        <!-- page footer 
           <p>Published on <time datetime="<?php get_page_date('Y-m-d'); ?>" pubdate><?php get_page_date('F jS, Y'); ?></time></p>
-        </div>
+        -->
       </section>
 
     </article>
