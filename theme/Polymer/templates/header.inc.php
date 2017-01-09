@@ -45,6 +45,7 @@
   <link rel="import" href="/bower_components/app-layout/app-scroll-effects/app-scroll-effects.html">
   <link rel="import" href="/bower_components/app-layout/app-toolbar/app-toolbar.html">
 
+  <link rel="import" href="/bower_components/paper-card/paper-card.html">
   <link rel="import" href="/bower_components/paper-button/paper-button.html">
   <link rel="import" href="/bower_components/paper-icon-button/paper-icon-button.html">
 

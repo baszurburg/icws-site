@@ -20,6 +20,9 @@ lib-cov
 backups
 data
 
+# generated files
+sitemap.xml
+
 # Coverage directory used by tools like istanbul
 coverage
 

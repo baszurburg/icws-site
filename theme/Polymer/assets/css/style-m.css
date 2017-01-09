@@ -2281,13 +2281,14 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: teal; }
-  footer.page-footer .footer-copyright {
+  background-color: #333; }
+
+footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(33, 33, 33, 0.08); }
+    background-color: rgba(0, 0, 0, 0.12); }
 
 table, th, td {
   border: none; }
