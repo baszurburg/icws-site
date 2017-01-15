@@ -14,31 +14,26 @@
 
 <style>
 
-
   footer.fixed { position: fixed; bottom: 0; right: 0; left: 256px;}
 
+  footer.page-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #333; 
+    }
 
-footer.page-footer {
-  margin-top: 20px;
-  padding-top: 20px;
-  background-color: #333; 
-  color: #fff;
-  }
-
-footer.page-footer .footer-copyright {
-    overflow: hidden;
-    height: 50px;
-    line-height: 50px;
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(0, 0, 0, 0.12); }
-
-
+  footer.page-footer .footer-copyright {
+      overflow: hidden;
+      height: 50px;
+      line-height: 50px;
+      background-color: rgba(0, 0, 0, 0.12); }
 
   @media (max-width: 640px) {
       footer.fixed {
         left: 0;
       }
     }
+
 </style>
 
 <footer class="page-footer container">
@@ -46,7 +41,7 @@ footer.page-footer .footer-copyright {
   <div class="row">
     <div class="col-md-8">
       <h5 class="white-text">ICWS Zurburg ICT</h5>
-      <p class="grey-text text-lighten-4">....</p>
+      <p class="grey-text text-lighten-4">We develop great websites</p>
     </div>
     <div class="col-md-4">
       <h5 class="white-text">Contact</h5>
@@ -60,7 +55,7 @@ footer.page-footer .footer-copyright {
 
   <div class="footer-copyright row">
 
-      <div class="col-xxs-12">
+      <div class="col-xxs-12 grey-text text-lighten-5">
         © <?php echo date('Y'); ?> <?php get_site_name(); ?>
         <!--
         <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
@@ -73,12 +68,14 @@ footer.page-footer .footer-copyright {
 
 <script>
 
+      var ICWS = ICWS || {};
+
       var content = document.querySelector('app-drawer-layout article');
       var header = document.querySelector('app-header');
       var footer = document.querySelector('footer'); 
       var positionPrev = 'static';
 
-      var setFooterStyle = function () {
+      ICWS.setFooterStyle = function () {
 
         var positionCalculated = (content.clientHeight + header.clientHeight + footer.clientHeight  <= window.innerHeight) ? 'fixed' : 'static';
 
@@ -93,7 +90,7 @@ footer.page-footer .footer-copyright {
 
       };
 
-      setFooterStyle();
-      window.addEventListener('resize', setFooterStyle);
+      ICWS.setFooterStyle();
+      window.addEventListener('resize', ICWS.setFooterStyle);
 
 </script>
